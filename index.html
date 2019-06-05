@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<body>
+	<div  style="height: 1000px; width: 1700px; background-image: url(1082920785_preview_maxresdefault.jpg); background-size: cover; display: none" class="world3"></div>
+
+
+	<div style="height: 1000px; width: 1700px; background-image: url(thumb-1920-880526.jpg); background-size: cover;" class="world">
+		<h1 class="text-white">Зайди в дверь и попади в джунгли, где на тебя будут охотиться хищники</h1>
+	</div>
+
+
+	<div style="background-image: url(24034f3dbd.jpg); height: 1000px; width: 1700px; background-size: cover; display: none" class="world2">
+		<h1 class="scor text-white">0</h1>
+		<h1 class="scor text-white">Найди всех хищников</h1>
+		<div style="height: 70px; width: 70px; margin-left: 1500px;position: absolute ">
+			<img src="2e322789793d88eb9512f177674d4955.jpg" class="h-100 w-100 q2">
+		</div>
+		<div style="height: 70px; width: 70px; margin-left: 1250px; margin-top: 700px;position: absolute">
+			<img src="80938152272027336f209b6fed9bf1f7.jpg" class="h-100 w-100 q3 ">
+		</div>
+		<div style="height: 70px; width: 70px;position: absolute; margin-top: 500px">
+			<img src="hqdefault.jpg" class="h-100 w-100 q4">
+		</div>
+		<div style="height: 70px; width: 70px;position: absolute; margin-left: 1100px">
+			<img src="lion_PNG23263.png" class="h-100 w-100 q5">
+		</div>
+		<div style="height: 70px; width: 70px;position: absolute; margin-left: 1250px; margin-top: 500px">
+			<img src="Predator_loadscreen.png " class="h-100 w-100 q6">
+		</div>
+		<div style="height: 70px; width: 70px;position: absolute; margin-top: 800px; margin-left: 800px" >
+			<img src="predator2.jpg" class="h-100 w-100 q7">
+		</div>
+		<div style="height: 40px; width: 40px;position: absolute; margin-top: 800px">
+			<img src="predator-jungle-hunter-maquette-300158-02 - Copy.jpg" class="h-100 w-100 q8">
+		</div>
+		<div style="height: 70px; width: 70px;position: absolute; margin-left: 600px; margin-top: 90px">
+			<img src="Аааа-0.jpg" class="h-100 w-100 q1">
+		</div>
+	</div>
+
+
+
+
+
+	<script type="text/javascript">
+		let score = 0
+
+
+		document.querySelector(".world").onclick = function(){
+			document.querySelector(".world").style.display = "none"
+			document.querySelector(".world2").style.display = "block"
+
+
+
+
+
+		}
+		document.querySelector(".q2").onclick = function(){
+			document.querySelector(".q2").style.display = "none"
+			score = score + 1
+			document.querySelector(".scor").innerHTML =score
+		}
+
+		document.querySelector(".q1").onclick = function(){
+			document.querySelector(".q1").style.display = "none"
+			alert("ты похоже совсем не знаешь кто такие хищники?")
+		}
+		document.querySelector(".q3").onclick = function(){
+			document.querySelector(".q3").style.display = "none"
+			alert("да нет, хищники это чуваки с дредами")
+		}
+		document.querySelector(".q4").onclick = function(){
+			document.querySelector(".q4").style.display = "none"
+			score = score + 1 
+			document.querySelector(".scor").innerHTML =score
+		}
+		document.querySelector(".q5").onclick = function(){
+			document.querySelector(".q5").style.display = "none"
+			alert("так-то правильно, но мы других хищников ищем ")
+			score = score + 0.5
+			document.querySelector(".scor").innerHTML =score
+		}
+		document.querySelector(".q6").onclick = function(){
+			document.querySelector(".q6").style.display = "none"
+			score = score + 1 
+			document.querySelector(".scor").innerHTML =score
+		}
+		document.querySelector(".q7").onclick = function(){
+			document.querySelector(".q7").style.display = "none"
+			score = score + 1 
+			document.querySelector(".scor").innerHTML =score
+		}
+		document.querySelector(".q8").onclick = function(){
+			document.querySelector(".q8").style.display = "none"
+			score = score + 1 
+			document.querySelector(".scor").innerHTML =score
+			alert("Ты молодец! Ты убил их всех")
+			document.querySelector(".world3").style.display = "block"
+			document.querySelector(".world2").style.display = "none"
+		}
+
+
+
+
+
+
+
+
+
+	</script>
+</body>
+</html>
